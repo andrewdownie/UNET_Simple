@@ -4,14 +4,23 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 public class Net_Manager : NetworkManager {
+	[SerializeField]
+	private GameObject player_Prefab;
 
-	// Use this for initialization
-	void Start () {
-		
+
+	public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerId)
+	{
+		Debug.Log("Adding player to game...");
+		GameObject newPlayer = Instantiate(player_Prefab);
+		NetworkServer.Spawn(newPlayer);
+		NetworkIdentity newIdentity = newPlayer.GetComponent<NetworkIdentity>();
+		newIdentity.AssignClientAuthority(conn);
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+	public override void OnServerReady(NetworkConnection conn){
+		NetworkServer.SetClientReady(conn);
+		Debug.Log("Server is now ready");
+		NetworkServer.SetClientReady(conn);
 		
 	}
 }
