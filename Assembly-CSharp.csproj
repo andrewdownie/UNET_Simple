@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{368E817E-C4FF-6DC5-CB6A-3CF26299CF75}</ProjectGuid>
+    <ProjectGuid>{086662ED-08C2-F099-35D5-233E2CDDD8CB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -46,40 +46,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\AmmoInventory.cs" />
-     <Compile Include="Assets\Scripts\AmmoPickup.cs" />
-     <Compile Include="Assets\Scripts\Base\AmmoInventory_Base.cs" />
-     <Compile Include="Assets\Scripts\Base\Bullet_Base.cs" />
-     <Compile Include="Assets\Scripts\Base\GunSlot_Base.cs" />
-     <Compile Include="Assets\Scripts\Base\Gun_Base.cs" />
      <Compile Include="Assets\Scripts\Base\HUD_Base.cs" />
-     <Compile Include="Assets\Scripts\Base\MuzzleFlash_Base.cs" />
-     <Compile Include="Assets\Scripts\Base\Player_Base.cs" />
-     <Compile Include="Assets\Scripts\Base\Shell_Base.cs" />
-     <Compile Include="Assets\Scripts\Base\Vitals_Base.cs" />
-     <Compile Include="Assets\Scripts\Bullet.cs" />
      <Compile Include="Assets\Scripts\ColorSetup.cs" />
      <Compile Include="Assets\Scripts\DestroyGameObject.cs" />
-     <Compile Include="Assets\Scripts\FloatingItem.cs" />
-     <Compile Include="Assets\Scripts\Gun.cs" />
-     <Compile Include="Assets\Scripts\GunSlot.cs" />
      <Compile Include="Assets\Scripts\HUD.cs" />
-     <Compile Include="Assets\Scripts\HealthPack.cs" />
      <Compile Include="Assets\Scripts\HideGameObject.cs" />
-     <Compile Include="Assets\Scripts\HitMarkerCallback.cs" />
-     <Compile Include="Assets\Scripts\LocalSetup.cs" />
-     <Compile Include="Assets\Scripts\MuzzleFlash.cs" />
-     <Compile Include="Assets\Scripts\Net_Manager.cs" />
-     <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\Networking\LocalSetup.cs" />
+     <Compile Include="Assets\Scripts\Networking\Net_Manager.cs" />
      <Compile Include="Assets\Scripts\PlayerControl.cs" />
      <Compile Include="Assets\Scripts\RandomColor.cs" />
-     <Compile Include="Assets\Scripts\Shell.cs" />
-     <Compile Include="Assets\Scripts\Shotgun.cs" />
-     <Compile Include="Assets\Scripts\ShotgunPellet.cs" />
-     <Compile Include="Assets\Scripts\UninteruptableTimer.cs" />
-     <Compile Include="Assets\Scripts\Vitals.cs" />
-     <Compile Include="Assets\Scripts\Zombie.cs" />
-     <Compile Include="Assets\Scripts\ZombieAI.cs" />
      <None Include="Assets\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
@@ -104,7 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{B21E6809-B83C-D047-C3B0-F7C15D9E8248}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{6DECC0D0-B918-5BEF-A165-92B7381698BC}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
